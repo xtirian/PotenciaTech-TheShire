@@ -1,0 +1,27 @@
+const listaDeNumeros = [516135 , 819165 , 81686, 8767 ,8168, 51356, 84453, 569]
+
+// qual a soma destes elementos
+let soma = 0;
+
+for (const numero of listaDeNumeros){
+  soma += numero
+}
+
+console.log("A soma dos elementos da Lista de Números é ",soma)
+
+
+// qual o menor deles
+
+let menorNumero;
+
+for ( const numero of listaDeNumeros){
+  
+  if(menorNumero === undefined){
+    menorNumero = numero
+  }
+  
+  if (numero < menorNumero){
+    menorNumero = numero
+  }
+}
+console.log(menorNumero,"é o menor numero da lista de números")
